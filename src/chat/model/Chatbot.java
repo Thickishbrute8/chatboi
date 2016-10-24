@@ -31,10 +31,40 @@ public class Chatbot {
 		memesList.add("willy wonka");
 		memesList.add("harambe");
 		memesList.add("john cena");
+		memesList.add("wus poppin B");
+		memesList.add("bruh");
+		memesList.add("one does not simply");
+		memesList.add("big smoke");
+		memesList.add("like a boss");
+		memesList.add("rage face");
+		memesList.add("troll face");
+		memesList.add("deal with it");
+		memesList.add("xD");
+		memesList.add("shrek");
+		
 		
 	}
 
-	private void buildPoliticalTopicsList() {
+	private void buildPoliticalTopicList() 
+	
+	{
+		politicalTopicList.add("election");
+		politicalTopicList.add("Democrat");
+		politicalTopicList.add("Republican");
+		politicalTopicList.add("liberal");
+		politicalTopicList.add("convervative");
+		politicalTopicList.add("Clinton");
+		politicalTopicList.add("Trump");
+		politicalTopicList.add("Kaine");
+		politicalTopicList.add("Pence");
+		politicalTopicList.add("11/8/2016");
+		politicalTopicList.add("Stein");
+		politicalTopicList.add("Johnson");
+		politicalTopicList.add("immigration");
+		politicalTopicList.add("build a wall");
+		
+		
+		
 	}
 
 	/**
@@ -62,8 +92,16 @@ public class Chatbot {
 	 *            The supplied String to be checked. * @return Whether it
 	 *            matches the content area.
 	 */
-	public boolean contentChecker(String currentInput) {
-		return false;
+	public boolean contentChecker(String currentInput) 
+	{
+	    boolean hasContent = false;
+	    
+	    if (curentInput.contains(content))
+	    {
+	    	
+	    }
+	    
+		return hasContent;
 	}
 
 	/**
