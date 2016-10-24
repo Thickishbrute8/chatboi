@@ -19,9 +19,19 @@ public class Chatbot {
 	 */
 	public Chatbot(String userName) {
 		memesList = new ArrayList<String>();
+		politicalTopicList = new ArrayList<String>(); 
 	}
 
-	private void buildMemesList() {
+	private void buildMemesList() 
+	{
+		memesList.add("doge");
+		memesList.add("cute animals");
+		memesList.add("grumpy cat");
+		memesList.add("dat boi");
+		memesList.add("willy wonka");
+		memesList.add("harambe");
+		memesList.add("john cena");
+		
 	}
 
 	private void buildPoliticalTopicsList() {
