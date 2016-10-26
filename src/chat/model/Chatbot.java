@@ -34,15 +34,16 @@ public class Chatbot {
 		memesList.add("wus poppin B");
 		memesList.add("bruh");
 		memesList.add("one does not simply");
-		memesList.add("big smoke");
+		memesList.add("prank'd");
 		memesList.add("like a boss");
 		memesList.add("rage face");
 		memesList.add("troll face");
 		memesList.add("deal with it");
 		memesList.add("xD");
 		memesList.add("shrek");
+		memesList.add("bottle flip");
 		
-		
+		 
 	}
 
 	private void buildPoliticalTopicList() 
@@ -62,7 +63,9 @@ public class Chatbot {
 		politicalTopicList.add("Johnson");
 		politicalTopicList.add("immigration");
 		politicalTopicList.add("build a wall");
-		
+		politicalTopicList.add("emails");
+		politicalTopicList.add("grab em");
+		politicalTopicList.add("");
 		
 		
 	}
@@ -96,7 +99,7 @@ public class Chatbot {
 	{
 	    boolean hasContent = false;
 	    
-	    if (curentInput.contains(content))
+	    if (currentInput.contains(content))
 	    {
 	    	
 	    }
@@ -113,8 +116,21 @@ public class Chatbot {
 	 *            The supplied String to be checked. * @return Whether the
 	 *            String is contained in the ArrayList.
 	 */
-	public boolean politicalTopicChecker(String currentInput) {
-		return false;
+	public boolean politicalTopicChecker(String currentInput)
+	{
+		boolean checkedPoliticalTopic = false;
+		if(politicalTopicList.size() ==0)
+		{
+			buildPoliticalTopicList();
+		}
+		for (String politicalTopic : politicalTopicList)
+		{
+			if(currentInput.contains(politicalTopic))
+			{
+				checkedPoliticalTopic = true;
+			}
+		}
+		return checkedPoliticalTopic;
 	}
 
 	/**
@@ -125,8 +141,24 @@ public class Chatbot {
 	 *            The supplied String to be checked. * @return Whether the
 	 *            supplied String is a recognized meme.
 	 */
-	public boolean memeChecker(String currentInput) {
-		return false;
+	public boolean memeChecker(String currentInput) 
+	{
+		boolean checkedMeme = false;
+		if(memesList.size() ==0)
+		{
+			buildMemesList();
+		}
+		for (String meme : memesList)
+		{
+			if(currentInput.contains(meme))
+			{
+				checkedMeme = true;
+			}
+			
+		}
+		
+		
+		return checkedMeme;
 	}
 
 	/**
